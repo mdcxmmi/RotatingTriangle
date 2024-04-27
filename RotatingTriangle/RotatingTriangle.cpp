@@ -67,8 +67,8 @@ struct TMoving {
 POINT MainPoint;
 
 
-double changeAngile(double angile, double increment) {
-    double sum = angile + increment;
+double changeAngle(double angle, double increment) {
+    double sum = angle + increment;
     //    if (sum > 360) sum -= 360;
     //    if (sum < 360) sum += 360;
 
@@ -146,10 +146,10 @@ double BaseAngle(POINT B) {
 
 void Move() {
     if (Moving.vector == Left) {
-        Triangle.omega = changeAngile(Triangle.omega, Moving.speed);
+        Triangle.omega = changeAngle(Triangle.omega, Moving.speed);
     }
     else {
-        Triangle.omega = changeAngile(Triangle.omega, -Moving.speed);
+        Triangle.omega = changeAngle(Triangle.omega, -Moving.speed);
     }
 }
 

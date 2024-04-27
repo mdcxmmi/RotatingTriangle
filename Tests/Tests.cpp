@@ -13,7 +13,7 @@ namespace Tests
 		TEST_METHOD(changeAngileTest)
 		{
 			double angle = 25.0;
-			double res = changeAngile(angle, 2.5);
+			double res = changeAngle(angle, 2.5);
 			Assert::AreEqual(27.5, res);
 		}
 		TEST_METHOD(LineLengthTest)
